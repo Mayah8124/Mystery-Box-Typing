@@ -311,12 +311,6 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
-  .w-\[3\] {
-    width: 3;
-  }
-  .w-\[3vw\] {
-    width: 3vw;
-  }
   .w-\[10vw\] {
     width: 10vw;
   }
@@ -460,9 +454,6 @@
   }
   .border-b-\[\#F6C28B\] {
     border-bottom-color: #F6C28B;
-  }
-  .border-b-\[\#\] {
-    border-bottom-color: #;
   }
   .bg-\[\#82DDF0\] {
     background-color: #82DDF0;
@@ -703,6 +694,13 @@
       --tw-gradient-via-stops: initial;
       --tw-gradient-from-position: 0%;
       --tw-gradient-via-position: 50%;
+      --tw-gradient-to-position: 100%;
+      --tw-font-weight: initial;
+      --tw-outline-style: solid;
+    }
+  }
+}
+;
       --tw-gradient-to-position: 100%;
       --tw-font-weight: initial;
       --tw-outline-style: solid;
