@@ -170,20 +170,23 @@
   }
 }
 @layer utilities {
-<<<<<<< HEAD
   .absolute {
     position: absolute;
   }
   .sticky {
     position: sticky;
   }
-=======
->>>>>>> profil
   .top-0 {
     top: calc(var(--spacing) * 0);
   }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
+  }
+  .left-0 {
+    left: calc(var(--spacing) * 0);
   }
   .row-auto {
     grid-row: auto;
@@ -278,7 +281,6 @@
   .h-\[100px\] {
     height: 100px;
   }
-<<<<<<< HEAD
   .h-auto {
     height: auto;
   }
@@ -288,8 +290,6 @@
   .w-3 {
     width: calc(var(--spacing) * 3);
   }
-=======
->>>>>>> profil
   .w-\[10vw\] {
     width: 10vw;
   }
@@ -355,17 +355,13 @@
   }
   .gap-0 {
     gap: calc(var(--spacing) * 0);
-<<<<<<< HEAD
   }
   .gap-1 {
     gap: calc(var(--spacing) * 1);
-=======
->>>>>>> profil
   }
   .gap-2 {
     gap: calc(var(--spacing) * 2);
   }
-<<<<<<< HEAD
   .gap-3 {
     gap: calc(var(--spacing) * 3);
   }
@@ -384,8 +380,6 @@
   .gap-10 {
     gap: calc(var(--spacing) * 10);
   }
-=======
->>>>>>> profil
   .gap-14 {
     gap: calc(var(--spacing) * 14);
   }
@@ -395,15 +389,12 @@
   .gap-\[58vh\] {
     gap: 58vh;
   }
-<<<<<<< HEAD
   .rounded {
     border-radius: 0.25rem;
   }
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
-=======
->>>>>>> profil
   .rounded-\[5px\] {
     border-radius: 5px;
   }
@@ -416,6 +407,10 @@
   .border {
     border-style: var(--tw-border-style);
     border-width: 1px;
+  }
+  .border-b {
+    border-bottom-style: var(--tw-border-style);
+    border-bottom-width: 1px;
   }
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
@@ -433,7 +428,6 @@
   .bg-\[\#F6C28B\] {
     background-color: #F6C28B;
   }
-<<<<<<< HEAD
   .bg-amber-950 {
     background-color: var(--color-amber-950);
   }
@@ -441,8 +435,6 @@
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
-=======
->>>>>>> profil
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -476,12 +468,9 @@
   .p-3 {
     padding: calc(var(--spacing) * 3);
   }
-<<<<<<< HEAD
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
   }
-=======
->>>>>>> profil
   .pr-\[20vw\] {
     padding-right: 20vw;
   }
