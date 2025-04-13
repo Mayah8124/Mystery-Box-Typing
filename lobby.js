@@ -28,10 +28,7 @@ function revealSubject() {
         mysteryBox.alt = randomSubject.replace('.png', '');
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
         mysteryBox.classList.remove("opacity-0");
-<<<<<<< HEAD
 
-=======
->>>>>>> 3adcb4041782d72e9de5078c6adf39f62e612a59
         actionButtons.classList.remove("hidden");
         instructionText.textContent = "Sujet révélé !";
         if (triesCounter) {
