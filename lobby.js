@@ -29,7 +29,7 @@ function revealSubject() {
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
         mysteryBox.classList.remove("opacity-0");
         actionButtons.classList.remove("hidden");
-        instructionText.textContent = "Sujet révélé !";
+        instructionText.textContent = "Subject revealed !";
         if (triesCounter) {
             triesCounter.textContent = MAX_TRIES - triesUsed;
         }
