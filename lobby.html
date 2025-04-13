@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mystery Box Typing</title>
+    <link rel="icon" href="assets/images/mystery_box_icon.png">
+    <link rel="stylesheet" href="./output.css">
+
+</head>
+
+<body class="bg-[#82DDF0] mx-[15px]">
+    
+    <header class="flex justify-between mt-[5px] mb-4">
+        <div class="flex row-auto items-center gap-2">
+            <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" class="h-[8vh]">
+            <p class="font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#5296A5] to-[#A57548]">Mystery Box Typing</p>
+        </div>
+        <div class="flex row-auto items-center gap-2 pl-0">
+            <p class="font-medium text-xl ">MayahNeko25</p>
+            <img src="assets/images/girl.png" alt="user-profil" class="h-[8vh] rounded-full">
+        </div>
+    </header>
+
+    <main class="w-[97vw] h-[86vh] bg-cover bg-center bg-no-repeat rounded-[5px] py-[5vh]" style="background-image: url(assets/images/background.png);">
+        <div class="grid grid-col-1 grid-flow-row place-items-center my-[5vh]">
+            <img src="assets/images/mystery_box_icon.png" alt="mystery_box_icon" id="clickable-box" class="h-[40vh] animate-bounce cursor-pointer transition-opacity duration-300" onclick="revealSubject()">
+            <h1 id="instruction-text" class="w-[30vw] text-white text-[30px] font-semibold text-center">
+                Click the Mytery Box to see your subject
+            </h1>
+        </div>
+        <div id="action-buttons" class="hidden w-full flex flex-row items-center justify-center gap-4 mt-4 text-white font-semibold">
+            <a href="game.html" id="play-link" class="bg-[#A57548] w-full max-w-xs text-center px-6 py-3 rounded-[5px]">CONTINUE</a>
+            <a href="index.html" id="home-link" class="bg-[#A57548] w-full max-w-xs text-center px-6 py-3 rounded-[5px]">BACK HOME</a>
+        </div>
+  
+    </main>
+
+    <script src="lobby.js"></script>
+</body>
+
+</html>
