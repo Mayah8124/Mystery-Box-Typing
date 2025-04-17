@@ -28,6 +28,8 @@ function revealSubject() {
         mysteryBox.src = `assets/images/${randomSubject}`;
         mysteryBox.alt = randomSubject.replace('.png', '');
 
+        localStorage.setItem('selectedSubject', randomSubject.replace('.png', ''));
+
         window.selectedSubject = randomSubject.replace('.png', '');
         
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
