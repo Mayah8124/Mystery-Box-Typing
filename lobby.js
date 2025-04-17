@@ -3,12 +3,21 @@ const MAX_TRIES = 5;
 let triesUsed = 0;
 const subjects = [
     "banana.png", 
-    "car.png", 
-    "chicken-leg.png", 
+    "car.png",
     "burger.png", 
     "house.png", 
     "beanie.png", 
-    "bread.png"
+    "bread.png",
+    "airplane.png",
+    "apple.png",
+    "fries.png",
+    "heels.png",
+    "hoodie.png",
+    "lemon.png",
+    "mall.png",
+    "moto.png",
+    "museum.png",
+    "papaya.png"
 ];
 
 const mysteryBox = document.getElementById("clickable-box");
