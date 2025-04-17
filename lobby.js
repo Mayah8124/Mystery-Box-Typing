@@ -1,5 +1,5 @@
 window.selectedSubject = null;
-document.getElementById("play-link").href = `game.html?subject=${window.selectedSubject}`;
+document.getElementById("play-link").href = `game.html?subject=${randomSubject.replace('.png', '')}`;
 const MAX_TRIES = 5;
 let triesUsed = 0;
 const subjects = [
