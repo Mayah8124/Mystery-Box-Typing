@@ -185,6 +185,10 @@
   }
 }
 @layer utilities {
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .absolute {
     position: absolute;
   }
@@ -203,6 +207,14 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
+<<<<<<< HEAD
+=======
+=======
+  .bottom-0 {
+    bottom: calc(var(--spacing) * 0);
+  }
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .row-auto {
     grid-row: auto;
   }
@@ -257,6 +269,10 @@
   .hidden {
     display: none;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .table {
     display: table;
   }
@@ -275,6 +291,11 @@
   .h-12 {
     height: calc(var(--spacing) * 12);
   }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .h-15 {
     height: calc(var(--spacing) * 15);
   }
@@ -305,6 +326,10 @@
   .h-\[100px\] {
     height: 100px;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .h-auto {
     height: auto;
   }
@@ -323,6 +348,14 @@
   .w-32 {
     width: calc(var(--spacing) * 32);
   }
+<<<<<<< HEAD
+=======
+=======
+  .max-h-\[30vh\] {
+    max-height: 30vh;
+  }
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .w-\[10vw\] {
     width: 10vw;
   }
@@ -467,6 +500,10 @@
   .gap-\[58vh\] {
     gap: 58vh;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .space-x-4 {
     :where(& > :not(:last-child)) {
       --tw-space-x-reverse: 0;
@@ -480,6 +517,11 @@
   .rounded-2xl {
     border-radius: var(--radius-2xl);
   }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .rounded-\[5px\] {
     border-radius: 5px;
   }
@@ -489,6 +531,10 @@
   .rounded-full {
     border-radius: calc(infinity * 1px);
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .rounded-lg {
     border-radius: var(--radius-lg);
   }
@@ -503,6 +549,11 @@
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 1px;
   }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 4px;
@@ -519,6 +570,10 @@
   .bg-\[\#F6C28B\] {
     background-color: #F6C28B;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
   .bg-amber-950 {
     background-color: var(--color-amber-950);
   }
@@ -544,6 +599,11 @@
     --tw-gradient-position: to bottom right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
@@ -595,9 +655,18 @@
   .py-\[5vh\] {
     padding-block: 5vh;
   }
+<<<<<<< HEAD
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
   }
+=======
+<<<<<<< HEAD
+  .pr-0 {
+    padding-right: calc(var(--spacing) * 0);
+  }
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
   .pr-\[20vw\] {
     padding-right: 20vw;
   }
@@ -681,6 +750,10 @@
     --tw-duration: 300ms;
     transition-duration: 300ms;
   }
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> game
 }
 @property --tw-rotate-x {
   syntax: "*";
@@ -711,6 +784,11 @@
   syntax: "*";
   inherits: false;
   initial-value: 0;
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
 }
 @property --tw-border-style {
   syntax: "*";
