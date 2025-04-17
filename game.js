@@ -6,7 +6,8 @@
  * Sur ce... Amusez-vous bien ! 
  */
 const urlParams = new URLSearchParams(window.location.search);
-const subject = urlParams.get('subject') || "default";
+const subjectFromURL = urlParams.get('subject');
+const subject = subjectFromURL || localStorage.getItem('selectedSubject') || "default";
 
 let startTime = null, previousEndTime = null;
 let currentWordIndex = 0;
@@ -49,19 +50,11 @@ const getFilteredSubjectWords = (mode) => {
 
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
-    const subject = localStorage.getItem('selectedSubject');
-    console.log("Current subject:", subject);
+    console.log("Current subject:", subject); // Utilisez subject directement
     
     let wordList;
-    if (subject && subject !== "null") {
+    if (subject && subject !== "null" && subject !== "default") {
         wordList = getFilteredSubjectWords(mode);
-    } else {
-        wordList = words[mode];
-    }
-
-    if (window.selectedSubject) {
-        wordList = getFilteredSubjectWords(mode);
-        console.log("Mots du sujet:", wordList); // Vérifiez les mots filtrés
     } else {
         wordList = words[mode];
     }
