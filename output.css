@@ -203,9 +203,6 @@
   .left-0 {
     left: calc(var(--spacing) * 0);
   }
-  .left-\[45vh\] {
-    left: 45vh;
-  }
   .row-auto {
     grid-row: auto;
   }
@@ -296,9 +293,6 @@
   .h-\[14vh\] {
     height: 14vh;
   }
-  .h-\[20vh\] {
-    height: 20vh;
-  }
   .h-\[40vh\] {
     height: 40vh;
   }
@@ -343,9 +337,6 @@
   }
   .w-\[97vw\] {
     width: 97vw;
-  }
-  .w-\[vw\] {
-    width: vw;
   }
   .w-full {
     width: 100%;
@@ -604,12 +595,6 @@
   .py-\[5vh\] {
     padding-block: 5vh;
   }
-  .py-\[10vh\] {
-    padding-block: 10vh;
-  }
-  .py-\[vh\] {
-    padding-block: vh;
-  }
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
   }
@@ -639,9 +624,6 @@
   }
   .text-\[20px\] {
     font-size: 20px;
-  }
-  .text-\[20vh\] {
-    font-size: 20vh;
   }
   .text-\[30px\] {
     font-size: 30px;
@@ -698,48 +680,6 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
-  }
-  .hover\:bg-blue-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-600);
-      }
-    }
-  }
-  .hover\:bg-blue-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-blue-700);
-      }
-    }
-  }
-  .hover\:bg-gray-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-600);
-      }
-    }
-  }
-  .hover\:bg-gray-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-gray-700);
-      }
-    }
-  }
-  .hover\:bg-green-600 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-600);
-      }
-    }
-  }
-  .hover\:bg-green-700 {
-    &:hover {
-      @media (hover: hover) {
-        background-color: var(--color-green-700);
-      }
-    }
   }
 }
 @property --tw-rotate-x {
