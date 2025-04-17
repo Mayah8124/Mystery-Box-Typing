@@ -1,5 +1,4 @@
 window.selectedSubject = null;
-document.getElementById("play-link").href = `game.html?subject=${randomSubject.replace('.png', '')}`;
 const MAX_TRIES = 5;
 let triesUsed = 0;
 const subjects = [
@@ -16,6 +15,7 @@ const mysteryBox = document.getElementById("clickable-box");
 const instructionText = document.getElementById("instruction-text");
 const actionButtons = document.getElementById("action-buttons");
 const triesCounter = document.getElementById("remaining-tries");
+const playLink = document.getElementById("play-link");
 
 function revealSubject() {
     mysteryBox.style.pointerEvents = "none";
@@ -26,18 +26,26 @@ function revealSubject() {
 
     setTimeout(() => {
         const randomSubject = subjects[Math.floor(Math.random() * subjects.length)];
-        mysteryBox.src = `assets/images/${randomSubject}`;
-        mysteryBox.alt = randomSubject.replace('.png', '');
-
-        localStorage.setItem('selectedSubject', randomSubject.replace('.png', ''));
-
-        window.selectedSubject = randomSubject.replace('.png', '');
+        const subjectName = randomSubject.replace('.png', '');
         
+        // Mettre à jour l'image
+        mysteryBox.src = `assets/images/${randomSubject}`;
+        mysteryBox.alt = subjectName;
+
+        // Stocker le sujet
+        localStorage.setItem('selectedSubject', subjectName);
+        window.selectedSubject = subjectName;
+        
+        // Mettre à jour le lien de jeu
+        playLink.href = `game.html?subject=${subjectName}`;
+        
+        // Animation et UI
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
         mysteryBox.classList.remove("opacity-0");
 
         actionButtons.classList.remove("hidden");
-        instructionText.textContent = "Subject revealed !";
+        instructionText.textContent = "Subject revealed!";
+        
         if (triesCounter) {
             triesCounter.textContent = MAX_TRIES - triesUsed;
         }
@@ -45,4 +53,5 @@ function revealSubject() {
 }
 
 function init() {
+    // Initialisation si nécessaire
 }
