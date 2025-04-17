@@ -20,9 +20,34 @@ const words = {
     hard: ["synchronize", "complicated", "development", "extravagant", "misconception"]
 };
 
+const getFilteredSubjectWords = (mode) => {
+    const subject = window.selectedSubject || "default";
+    
+    // Liste complète des mots par sujet (peu importe leur longueur)
+    const subjectWords = {
+        banana: ["banana", "fruit", "yellow", "peel", "tropical", "plantation", "vitamins", "sweetness", "carbohydrates"],
+        car: ["vehicle", "engine", "wheels", "drive", "speed", "automobile", "highway", "accelerator", "transmission"],
+        // ... (autres sujets avec mots variés en longueur)
+        default: ["apple", "keyboard", "synchronize"] // Fallback
+    };
+
+    const words = subjectWords[subject] || subjectWords.default;
+
+    // Filtre les mots selon la longueur du mode
+    return words.filter(word => {
+        if (mode === "easy") return word.length <= 5;
+        if (mode === "medium") return word.length <= 8;
+        if (mode === "hard") return word.length <= 15;
+        return true; // Si mode inconnu
+    });
+};
+
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
-    const wordList = words[mode];
+    const wordList = window.selectedSubject 
+        ? getFilteredSubjectWords(mode) // Mots du sujet filtrés par mode
+        : words[mode]; // Mots standards si aucun sujet
+
     return wordList[Math.floor(Math.random() * wordList.length)];
 };
 

@@ -1,3 +1,4 @@
+window.selectedSubject = null;
 const MAX_TRIES = 5;
 let triesUsed = 0;
 const subjects = [
@@ -30,7 +31,7 @@ function revealSubject() {
         mysteryBox.classList.remove("opacity-0");
 
         actionButtons.classList.remove("hidden");
-        instructionText.textContent = "Sujet révélé !";
+        instructionText.textContent = "Subject revealed !";
         if (triesCounter) {
             triesCounter.textContent = MAX_TRIES - triesUsed;
         }
