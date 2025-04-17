@@ -37,17 +37,28 @@ const getFilteredSubjectWords = (mode) => {
     return words.filter(word => {
         if (mode === "easy") return word.length <= 5;
         if (mode === "medium") return word.length <= 8;
-        if (mode === "hard") return word.length <= 15;
+        if (mode === "hard") return word.length <= 12;
         return true; // Si mode inconnu
     });
 };
 
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
-    const wordList = window.selectedSubject 
-        ? getFilteredSubjectWords(mode) // Mots du sujet filtrés par mode
-        : words[mode]; // Mots standards si aucun sujet
-
+    console.log("Current subject:", window.selectedSubject); // Vérifiez la valeur
+    
+    let wordList;
+    if (window.selectedSubject) {
+        wordList = getFilteredSubjectWords(mode);
+        console.log("Mots du sujet:", wordList); // Vérifiez les mots filtrés
+    } else {
+        wordList = words[mode];
+    }
+    
+    if (!wordList || wordList.length === 0) {
+        console.warn("Aucun mot disponible - utilisation des mots par défaut");
+        wordList = words[mode] || ["default"];
+    }
+    
     return wordList[Math.floor(Math.random() * wordList.length)];
 };
 
@@ -72,6 +83,8 @@ const startTest = (wordCount = 50) => {
 
     inputField.value = "";
     results.textContent = "";
+
+    console.log("Démarrage du test avec sujet:", window.selectedSubject);
 };
 
 // Start the timer when user begins typing
