@@ -186,8 +186,11 @@
 }
 @layer utilities {
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .absolute {
     position: absolute;
@@ -208,12 +211,15 @@
     left: calc(var(--spacing) * 0);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
   }
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .row-auto {
     grid-row: auto;
@@ -270,8 +276,11 @@
     display: none;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .table {
     display: table;
@@ -292,9 +301,12 @@
     height: calc(var(--spacing) * 12);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .h-15 {
     height: calc(var(--spacing) * 15);
@@ -327,8 +339,11 @@
     height: 100px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .h-auto {
     height: auto;
@@ -349,12 +364,15 @@
     width: calc(var(--spacing) * 32);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
   .max-h-\[30vh\] {
     max-height: 30vh;
   }
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .w-\[10vw\] {
     width: 10vw;
@@ -501,8 +519,11 @@
     gap: 58vh;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .space-x-4 {
     :where(& > :not(:last-child)) {
@@ -518,9 +539,12 @@
     border-radius: var(--radius-2xl);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .rounded-\[5px\] {
     border-radius: 5px;
@@ -532,8 +556,11 @@
     border-radius: calc(infinity * 1px);
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .rounded-lg {
     border-radius: var(--radius-lg);
@@ -550,9 +577,12 @@
     border-bottom-width: 1px;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .border-b-4 {
     border-bottom-style: var(--tw-border-style);
@@ -571,8 +601,11 @@
     background-color: #F6C28B;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
   .bg-amber-950 {
     background-color: var(--color-amber-950);
@@ -600,9 +633,12 @@
     background-image: linear-gradient(var(--tw-gradient-stops));
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .bg-gradient-to-r {
     --tw-gradient-position: to right in oklab;
@@ -655,10 +691,10 @@
   .py-\[5vh\] {
     padding-block: 5vh;
   }
-<<<<<<< HEAD
   .pr-0 {
     padding-right: calc(var(--spacing) * 0);
   }
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
   .pr-0 {
@@ -666,6 +702,8 @@
   }
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
   .pr-\[20vw\] {
     padding-right: 20vw;
@@ -751,8 +789,11 @@
     transition-duration: 300ms;
   }
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 <<<<<<< HEAD
+>>>>>>> game
+=======
 >>>>>>> game
 }
 @property --tw-rotate-x {
@@ -785,9 +826,12 @@
   inherits: false;
   initial-value: 0;
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> 1f04a1cfbd646f1f3a8dcf8872fb08ba99cef45c
+>>>>>>> game
+=======
 >>>>>>> game
 }
 @property --tw-border-style {
