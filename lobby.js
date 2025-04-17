@@ -1,3 +1,4 @@
+window.selectedSubject = null;
 const MAX_TRIES = 5;
 let triesUsed = 0;
 const subjects = [
@@ -26,6 +27,9 @@ function revealSubject() {
         const randomSubject = subjects[Math.floor(Math.random() * subjects.length)];
         mysteryBox.src = `assets/images/${randomSubject}`;
         mysteryBox.alt = randomSubject.replace('.png', '');
+
+        window.selectedSubject = randomSubject.replace('.png', '');
+        
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
         mysteryBox.classList.remove("opacity-0");
 
