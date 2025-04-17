@@ -5,6 +5,9 @@
  * 
  * Sur ce... Amusez-vous bien ! 
  */
+const urlParams = new URLSearchParams(window.location.search);
+const subject = urlParams.get('subject') || "default";
+
 let startTime = null, previousEndTime = null;
 let currentWordIndex = 0;
 const wordsToType = [];
@@ -21,14 +24,16 @@ const words = {
 };
 
 const getFilteredSubjectWords = (mode) => {
-    const subject = window.selectedSubject || "default";
+    const subject = localStorage.getItem('selectedSubject') || "default";
     
     // Liste complète des mots par sujet (peu importe leur longueur)
     const subjectWords = {
         banana: ["banana", "fruit", "yellow", "peel", "tropical", "plantation", "vitamins", "sweetness", "carbohydrates"],
         car: ["vehicle", "engine", "wheels", "drive", "speed", "automobile", "highway", "accelerator", "transmission"],
-        // ... (autres sujets avec mots variés en longueur)
-        default: ["apple", "keyboard", "synchronize"] // Fallback
+        burger: ["sandwich", "patty", "bun", "cheese", "lettuce", "tomato", "fastfood", "ketchup", "mustard"],
+        house: ["building", "home", "roof", "door", "windows", "garden", "furniture", "kitchen", "bedroom"],
+        beanie: ["hat", "wool", "warm", "winter", "knitted", "headwear", "fashion", "comfy", "accessory"],
+        bread: ["loaf", "baked", "flour", "yeast", "toast", "bakery", "sourdough", "baguette", "gluten"]
     };
 
     const words = subjectWords[subject] || subjectWords.default;
@@ -44,9 +49,16 @@ const getFilteredSubjectWords = (mode) => {
 
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
-    console.log("Current subject:", window.selectedSubject); // Vérifiez la valeur
+    const subject = localStorage.getItem('selectedSubject');
+    console.log("Current subject:", subject);
     
     let wordList;
+    if (subject && subject !== "null") {
+        wordList = getFilteredSubjectWords(mode);
+    } else {
+        wordList = words[mode];
+    }
+
     if (window.selectedSubject) {
         wordList = getFilteredSubjectWords(mode);
         console.log("Mots du sujet:", wordList); // Vérifiez les mots filtrés
