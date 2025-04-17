@@ -24,46 +24,55 @@ const words = {
     hard: ["synchronize", "complicated", "development", "extravagant", "misconception"]
 };
 
-const getFilteredSubjectWords = (mode) => {
-    const subject = localStorage.getItem('selectedSubject') || "default";
-    
-    // Liste complète des mots par sujet (peu importe leur longueur)
-    const subjectWords = {
-        banana:["sweet", "curvy", "tasty", "peels", "seeds","tropical","vitamins", "ripened", "cluster","carbohydrate", "nutritional", "potassiumrich"],
-        apple:["juicy", "orchard", "red", "snack", "cores","crunchy", "vitamins", "healthy", "shining","antioxidants", "deliciousness"],
-        beanie:["wool", "warm", "knit", "head", "bob","lheadwear", "stitched", "earflaps", "pompon","knittedwinter", "accessories"],
-        burger: ["buns", "beefy", "yummy", "toast", "patty","cheeseburger", "mustardy", "lettuces", "pickles","doublecheese", "condiments"],
-        car:["wheels", "motor", "drive", "speed", "tires","highways", "convert", "engines", "gearshift","transmission", "aerodynamic"]
-    }
+// ... (garder le début du code jusqu'à const words = {...})
 
-    const words = subjectWords[subject] || subjectWords.default;
-
-    // Filtre les mots selon la longueur du mode
-    return words.filter(word => {
-        if (mode === "easy") return word.length <= 5;
-        if (mode === "medium") return word.length <= 8;
-        if (mode === "hard") return word.length <= 12;
-        return true; // Si mode inconnu
-    });
+const subjectWords = {
+    banana: ["banana", "fruit", "yellow", "peel", "tropical", "sweet", "vitamins"],
+    apple: ["apple", "fruit", "red", "juicy", "orchard", "crunchy", "healthy"],
+    papaya: ["papaya", "fruit", "tropical", "orange", "seeds", "sweet", "vitamins"],
+    lemon: ["lemon", "citrus", "yellow", "sour", "juice", "vitamin C", "zest"],
+    beanie: ["beanie", "hat", "wool", "warm", "winter", "knit", "headwear"],
+    heels: ["heels", "shoes", "high", "fashion", "elegant", "women", "leather"],
+    hoodie: ["hoodie", "sweatshirt", "hood", "casual", "warm", "cotton", "streetwear"],
+    burger: ["burger", "sandwich", "beef", "cheese", "lettuce", "fast food", "bun"],
+    fries: ["fries", "potato", "chips", "crispy", "salty", "fast food", "ketchup"],
+    bread: ["bread", "loaf", "baked", "flour", "yeast", "toast", "bakery"],
+    car: ["car", "vehicle", "drive", "engine", "wheels", "speed", "automobile"],
+    airplane: ["airplane", "flight", "wings", "pilot", "travel", "sky", "jet"],
+    moto: ["moto", "motorcycle", "bike", "ride", "helmet", "speed", "engine"],
+    house: ["house", "home", "roof", "door", "garden", "living", "building"],
+    mall: ["mall", "shopping", "stores", "center", "clothes", "food court", "escalator"],
+    museum: ["museum", "art", "exhibition", "history", "gallery", "paintings", "sculpture"]
 };
 
-// Generate a random word from the selected mode
 const getRandomWord = (mode) => {
-    console.log("Current subject:", subject); // Utilisez subject directement
+    const subject = localStorage.getItem('selectedSubject') || "default";
     
-    let wordList;
-    if (subject && subject !== "null" && subject !== "default") {
-        wordList = getFilteredSubjectWords(mode);
-    } else {
-        wordList = words[mode];
+    let wordList = [];
+    
+    // Si le sujet existe, filtrer les mots selon la longueur
+    if (subjectWords[subject]) {
+        wordList = subjectWords[subject].filter(word => {
+            if (mode === "easy") return word.length <= 5;
+            if (mode === "medium") return word.length <= 8;
+            if (mode === "hard") return word.length <= 12;
+            return true;
+        });
     }
     
-    if (!wordList || wordList.length === 0) {
-        console.warn("Aucun mot disponible - utilisation des mots par défaut");
-        wordList = words[mode] || ["default"];
+    // Si on a trouvé des mots correspondants
+    if (wordList.length > 0) {
+        return wordList[Math.floor(Math.random() * wordList.length)];
     }
     
-    return wordList[Math.floor(Math.random() * wordList.length)];
+    // Fallback aux mots par défaut si aucun mot ne correspond
+    console.warn(`Aucun mot de taille appropriée pour ${subject} en mode ${mode}`);
+    const defaultWords = {
+        easy: ["cat", "dog", "sun"],
+        medium: ["banana", "orange", "purple"],
+        hard: ["elephant", "watermelon", "adventure"]
+    };
+    return defaultWords[mode][Math.floor(Math.random() * defaultWords[mode].length)];
 };
 
 // Initialize the typing test
