@@ -29,32 +29,12 @@ const getFilteredSubjectWords = (mode) => {
     
     // Liste complète des mots par sujet (peu importe leur longueur)
     const subjectWords = {
-        // Fruits
-        banana: ["banana", "fruit", "yellow", "peel", "tropical", "sweet", "vitamins"],
-        apple: ["apple", "fruit", "red", "juicy", "orchard", "crunchy", "healthy"],
-        papaya: ["papaya", "fruit", "tropical", "orange", "seeds", "sweet", "vitamins"],
-        lemon: ["lemon", "citrus", "yellow", "sour", "juice", "vitamin C", "zest"],
-        
-        // Vêtements
-        beanie: ["beanie", "hat", "wool", "warm", "winter", "knit", "headwear"],
-        heels: ["heels", "shoes", "high", "fashion", "elegant", "women", "leather"],
-        hoodie: ["hoodie", "sweatshirt", "hood", "casual", "warm", "cotton", "streetwear"],
-        
-        // Nourriture
-        burger: ["burger", "sandwich", "beef", "cheese", "lettuce", "fast food", "bun"],
-        fries: ["fries", "potato", "chips", "crispy", "salty", "fast food", "ketchup"],
-        bread: ["bread", "loaf", "baked", "flour", "yeast", "toast", "bakery"],
-        
-        // Transports
-        car: ["car", "vehicle", "drive", "engine", "wheels", "speed", "automobile"],
-        airplane: ["airplane", "flight", "wings", "pilot", "travel", "sky", "jet"],
-        moto: ["moto", "motorcycle", "bike", "ride", "helmet", "speed", "engine"],
-        
-        // Lieux
-        house: ["house", "home", "roof", "door", "garden", "living", "building"],
-        mall: ["mall", "shopping", "stores", "center", "clothes", "food court", "escalator"],
-        museum: ["museum", "art", "exhibition", "history", "gallery", "paintings", "sculpture"]
-    };
+        banana:["sweet", "curvy", "tasty", "peels", "seeds","tropical","vitamins", "ripened", "cluster","carbohydrate", "nutritional", "potassiumrich"],
+        apple:["juicy", "orchard", "red", "snack", "cores","crunchy", "vitamins", "healthy", "shining","antioxidants", "deliciousness"],
+        beanie:["wool", "warm", "knit", "head", "bob","lheadwear", "stitched", "earflaps", "pompon","knittedwinter", "accessories"],
+        burger: ["buns", "beefy", "yummy", "toast", "patty","cheeseburger", "mustardy", "lettuces", "pickles","doublecheese", "condiments"],
+        car:["wheels", "motor", "drive", "speed", "tires","highways", "convert", "engines", "gearshift","transmission", "aerodynamic"]
+    }
 
     const words = subjectWords[subject] || subjectWords.default;
 
@@ -66,21 +46,6 @@ const getFilteredSubjectWords = (mode) => {
         return true; // Si mode inconnu
     });
 };
-
-const categories = {
-    fruits: ["banana", "apple", "papaya", "lemon"],
-    clothes: ["beanie", "heels", "hoodie"],
-    foods: ["burger", "fries", "bread"],
-    transports: ["car", "airplane", "moto"],
-    places: ["house", "mall", "museum"]
-};
-
-// Puis dans getRandomWord(), vous pouvez faire :
-if (categories.fruits.includes(subject)) {
-    // Utiliser des mots génériques de fruits
-    const allFruitWords = categories.fruits.flatMap(fruit => subjectWords[fruit]);
-    return allFruitWords[Math.floor(Math.random() * allFruitWords.length)];
-}
 
 // Generate a random word from the selected mode
 const getRandomWord = (mode) => {
