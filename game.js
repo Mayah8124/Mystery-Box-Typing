@@ -27,22 +27,22 @@ const words = {
 // ... (garder le début du code jusqu'à const words = {...})
 
 const subjectWords = {
-    banana: ["banana", "fruit", "yellow", "peel", "tropical", "sweet", "vitamins"],
-    apple: ["apple", "fruit", "red", "juicy", "orchard", "crunchy", "healthy"],
-    papaya: ["papaya", "fruit", "tropical", "orange", "seeds", "sweet", "vitamins"],
+    banana: ["banana", "fruit", "yellow", "peel", "tropical", "sweet", "vitamins","bunch", "peel"],
+    apple: ["apple", "fruit", "red", "juicy", "orchard", "crunchy", "healthy","sweet", "tree", "juice", "cider"],
+    papaya: ["papaya", "fruit", "tropical", "orange", "seeds", "sweet", "vitamins","juicy"],
     lemon: ["lemon", "citrus", "yellow", "sour", "juice", "vitamin C", "zest"],
-    beanie: ["beanie", "hat", "wool", "warm", "winter", "knit", "headwear"],
-    heels: ["heels", "shoes", "high", "fashion", "elegant", "women", "leather"],
+    beanie: ["beanie", "hat", "wool", "warm", "winter", "knit", "headwear","cozy", "head"],
+    heels: ["heels", "shoes", "high","pump", "stile", "lady", "fashion", "elegant", "women", "leather"],
     hoodie: ["hoodie", "sweatshirt", "hood", "casual", "warm", "cotton", "streetwear"],
-    burger: ["burger", "sandwich", "beef", "cheese", "lettuce", "fast food", "bun"],
-    fries: ["fries", "potato", "chips", "crispy", "salty", "fast food", "ketchup"],
-    bread: ["bread", "loaf", "baked", "flour", "yeast", "toast", "bakery"],
-    car: ["car", "vehicle", "drive", "engine", "wheels", "speed", "automobile"],
-    airplane: ["airplane", "flight", "wings", "pilot", "travel", "sky", "jet"],
-    moto: ["moto", "motorcycle", "bike", "ride", "helmet", "speed", "engine"],
-    house: ["house", "home", "roof", "door", "garden", "living", "building"],
-    mall: ["mall", "shopping", "stores", "center", "clothes", "food court", "escalator"],
-    museum: ["museum", "art", "exhibition", "history", "gallery", "paintings", "sculpture"]
+    burger: ["burger", "sandwich","patty", "bun","grill", "beef", "cheese", "lettuce", "fast food", "bun"],
+    fries: ["fries","snack", "potato", "chips", "crispy", "salty", "fast food", "ketchup"],
+    bread: ["bread", "loaf", "baked", "flour", "yeast", "toast", "bakery","bake", "wheat", "dough"],
+    car: ["car", "vehicle", "drive", "engine", "wheels", "speed", "automobile","auto", "drive","motor"],
+    airplane: ["airplane", "flight", "wings", "pilot", "travel", "sky", "jet", "fly", "air"],
+    moto: ["moto", "motorcycle", "bike", "ride", "helmet", "speed", "engine","race", "turbo"],
+    house: ["house", "home", "roof", "door", "garden", "living", "building","brick", "villa"],
+    mall: ["mall", "shopping", "stores", "center", "clothes", "food court", "escalator","shop", "store", "plaza", "sales", "retail"],
+    museum: ["museum", "art", "exhibition", "history", "gallery", "paintings", "sculpture","exhibit","relic"]
 };
 
 const getRandomWord = (mode) => {
