@@ -1,4 +1,4 @@
-# Vanilla Typing 
+# Mystery Box Typing 
 
 ## Introduction
 Mystery box typing is a game that will help you gain speed and confidence. First, by receiving a word by chance, you'll have the subject of your game. 
