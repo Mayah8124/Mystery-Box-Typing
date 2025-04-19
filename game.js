@@ -1,10 +1,3 @@
-/**
- * Point culture (en Français car je suis un peu obligé): 
- * Dans ce genre de jeu, un mot equivaut a 5 caractères, y compris les espaces. 
- * La precision, c'est le pourcentage de caractères tapées correctement sur toutes les caractères tapées.
- * 
- * Sur ce... Amusez-vous bien ! 
- */
 const urlParams = new URLSearchParams(window.location.search);
 const subjectFromURL = urlParams.get('subject');
 const subject = subjectFromURL || localStorage.getItem('selectedSubject') || "default";
@@ -23,8 +16,6 @@ const words = {
     medium: ["keyboard", "monitor", "printer", "charger", "battery"],
     hard: ["synchronize", "complicated", "development", "extravagant", "misconception"]
 };
-
-// ... (garder le début du code jusqu'à const words = {...})
 
 const subjectWords = {
     banana: ["banana", "fruit", "yellow", "peel", "tropical", "sweet", "vitamins","bunch", "peel"],
@@ -50,7 +41,7 @@ const getRandomWord = (mode) => {
     
     let wordList = [];
     
-    // Si le sujet existe, filtrer les mots selon la longueur
+    // if the subject doesn't exist
     if (subjectWords[subject]) {
         wordList = subjectWords[subject].filter(word => {
             if (mode === "easy") return word.length <= 5;
@@ -60,12 +51,11 @@ const getRandomWord = (mode) => {
         });
     }
     
-    // Si on a trouvé des mots correspondants
     if (wordList.length > 0) {
         return wordList[Math.floor(Math.random() * wordList.length)];
     }
     
-    // Fallback aux mots par défaut si aucun mot ne correspond
+    // Fallback 
     console.warn(`Aucun mot de taille appropriée pour ${subject} en mode ${mode}`);
     const defaultWords = {
         easy: ["cat", "dog", "sun"],
@@ -84,7 +74,7 @@ const startTest = (wordCount = 50) => {
     previousWordTime = null;
     correctWords = 0;
     totalWordsTyped = 0;
-    currentCharIndex = 0; // Nouvelle variable pour suivre la position du curseur
+    currentCharIndex = 0; // New variable which follow the sursor
 
     for (let i = 0; i < wordCount; i++) {
         wordsToType.push(getRandomWord(modeSelect.value));
