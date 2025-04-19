@@ -37,18 +37,14 @@ function revealSubject() {
         const randomSubject = subjects[Math.floor(Math.random() * subjects.length)];
         const subjectName = randomSubject.replace('.png', '');
         
-        // Mettre à jour l'image
         mysteryBox.src = `assets/images/${randomSubject}`;
         mysteryBox.alt = subjectName;
 
-        // Stocker le sujet
         localStorage.setItem('selectedSubject', subjectName);
         window.selectedSubject = subjectName;
-        
-        // Mettre à jour le lien de jeu
+ 
         playLink.href = `game.html?subject=${subjectName}`;
-        
-        // Animation et UI
+ 
         mysteryBox.className = "max-h-[30vh] cursor-default transition-opacity duration-300";
         mysteryBox.classList.remove("opacity-0");
 
@@ -62,5 +58,4 @@ function revealSubject() {
 }
 
 function init() {
-    // Initialisation si nécessaire
 }
