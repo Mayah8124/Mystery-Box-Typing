@@ -15,7 +15,7 @@
   "license": "ISC",
   "type": "commonjs",
   "dependencies": {
-    "@tailwindcss/cli": "^4.1.3",
+    "@tailwindcss/cli": "^4.1.4",
     "tailwindcss": "^4.1.4"
   }
 }
