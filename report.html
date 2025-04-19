@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REPORT</title>
+    <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="report.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<style>
+    header {
+  margin-top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #82ddf0;
+  padding: 20px 40px;
+  border-bottom: 4px solid #FFA500;
+}
+</style>
+<body >
+   
+    <header class="flex justify-between mt-[5px] mb-4">
+        <div class="flex row-auto items-center gap-2">
+            <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" class="h-[8vh]">
+            <p class="font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#82ddf0] to-[#A57548]">Mystery Box Typing</p>
+        </div>
+
+        <nav class="grid grid-cols-3 gap-14 font-semibold items-center text-center">
+            <a href="index.html" class="bg-[#F6C28B] w-[10vw] h-[5vh] rounded-[5px]">Home</a>
+            <a href="profil.html" class=" border-b-4 border-b-[#F6C28B] w-[10vw]">Profil</a>
+            <a href="settings.html" class=" border-b-4 border-b-[#F6C28B] w-[10vw]">Setting</a>
+        </nav>
+
+        <div class="flex row-auto items-center gap-2 pl-0">
+            <p class="font-medium text-xl ">MayahNeko25</p>
+            <img src="assets/images/girl.png" alt="user-profil" class="h-[8vh] rounded-full">
+        </div>
+        
+    </header>
+    <main>
+        <section>
+            <div>
+                <textarea name="commentaire" id=""></textarea>
+            </div>
+        </section>
+        <section>
+            <div class="report">
+                <strong>write your repport here ↓</strong>
+            </div>
+            <div>
+                <a href="index.html"><i class="fa-solid fa-paper-plane" id="sendReport"></i></a>
+            </div>
+        </section>
+    </main>
+    <script>
+        document.getElementById('sendReport').addEventListener('click', function(event) {
+            alert('Your report has been sent!');
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+

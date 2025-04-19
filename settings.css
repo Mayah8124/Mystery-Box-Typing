@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #87CEEB;
+    color: #333;
+  }
+  
+  header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82ddf0;
+    padding: 20px 40px;
+    border-bottom: 4px solid #FFA500;
+  }
+  
+  .logo {
+    font-weight: bold;
+    font-size: 18px;
+    color: #ff7f50;
+    line-height: 1.2;
+  }
+  
+  .logo span {
+    color: #3b3b98;
+  }
+  
+  nav ul {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding-bottom: 4px;
+    transition: color 0.3s;
+  }
+  
+  nav .active a {
+    background-color: #fdbb72;
+    padding: 8px 16px;
+    border-radius: 6px;
+    color: #000;
+  }
+  
+  nav a:hover {
+    color: #000;
+  }
+  
+  .user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .username {
+    font-weight: bold;
+  }
+  
+  .avatar {
+    width: 30px;
+    height: 30px;
+    background-color: #c0392b;
+    border-radius: 50%;
+  }
+  
+  main {
+    padding: 40px;
+  }
+  
+  .settings {
+    background-color: #15373f;
+    padding: 30px;
+    border-radius: 10px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .settings-box {
+    background-color: #a5dff0;
+    padding: 20px;
+    border-radius: 15px;
+    min-width: 200px;
+  }
+  
+  .settings-box h2 {
+    text-align: center;
+    color: #0077b6;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  }
+  
+  .option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #7bb8cb;
+    padding: 10px 15px;
+    border-radius: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .option button {
+    background-color: #4d9fad;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  .option button:hover {
+    background-color: #2f6f7a;
+  }
+  

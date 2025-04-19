@@ -7,11 +7,23 @@
     <title>Mystery Box Typing</title>
     <link rel="icon" href="assets/images/mystery_box_icon.png">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+      header {
+    margin-top:0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82ddf0;
+    padding: 20px 40px;
+    border-bottom: 4px solid #FFA500;
+  }
+</style>
 
 <body class="bg-[#82DDF0] mx-[15px]">
 
-    <header class="flex justify-between mt-[5px] mb-4">
+    <header class="flex justify-between mt-[5px] mb-4 bg-blue-500">
         <div class="flex row-auto items-center gap-2">
             <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" class="h-[8vh]">
             <p class="font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#5296A5] to-[#A57548]">Mystery Box Typing</p>
@@ -20,7 +32,7 @@
         <nav class="grid grid-cols-3 gap-14 font-semibold items-center text-center">
             <a href="index.html" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Home</a>
             <a href="profil.html" class="bg-[#F6C28B] w-[10vw] h-[5vh] rounded-[5px] ">Profil</a>
-            <a href="" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Setting</a>
+            <a href="settings.html" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Setting</a>
         </nav>
 
         <div class="flex row-auto items-center gap-2 pl-0">
@@ -28,8 +40,7 @@
             <img src="assets/images/girl.png" alt="user-profil" class="h-[8vh] rounded-full">
         </div>
     </header>
-
-    <main class="w-[97vw] h-[86vh] grid grid-cols-2 bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image: url(assets/images/background.png);">
+<main class="main">    <main class="w-[97vw] h-[86vh] grid grid-cols-2 bg-cover bg-center bg-no-repeat rounded-[5px] border" style="background-image:url(assets/images/background.png) ;">
         <img src="assets/images/girl.png" alt="litlle girl" class="h-[50vh] mt-8">
         <div class="grid grid-rows-5 place-content-baseline gap-0">
             <div class="grid grid-cols-2 items-center">
@@ -54,6 +65,10 @@
             </div>
         </div>
     </main>
+
+</main>
+
+    <script src="settings.js"></script>
 </body>
 
 </html>

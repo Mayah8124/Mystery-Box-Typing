@@ -7,7 +7,20 @@
     <title>Mystery Box Typing</title>
     <link rel="icon" href="assets/images/mystery_box_icon.png">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+      header {
+    margin-top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #82ddf0;
+    padding: 20px 40px;
+    border-bottom: 4px solid #FFA500;
+  }
+</style>
 
 <body class="bg-[#82DDF0] mx-[15px]">
 
@@ -20,7 +33,7 @@
         <nav class="grid grid-cols-3 gap-14 font-semibold items-center text-center">
             <a href="index.html" class="bg-[#F6C28B] w-[10vw] h-[5vh] rounded-[5px] ">Home</a>
             <a href="profil.html" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Profil</a>
-            <a href="" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Setting</a>
+            <a href="settings.html"class=" border-b-4 border-b-[#F6C28B] w-[10vw]">Setting</a>
         </nav>
 
         <div class="flex row-auto items-center gap-2 pl-0">
@@ -30,7 +43,7 @@
     </header>
 
     <main class="flex row-auto">
-        <div class="h-[86vh] w-[70vw] grid grid-rows-2 place-content-between gap-[58vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image: url(assets/images/background.png);">
+        <div class="h-[86vh] w-[70vw] grid grid-rows-2 place-content-between gap-[58vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image:url(assets/images/background.png) ;">
             <div class="grid grid-rows-2 place-content-center gap-[15vh] m-4">
                 <h1 class="text-[#FCD7AD] font-bold text-[40px]">WELCOME</h1>
                 <p class="text-white font-medium text-[30px] pr-[20vw]">Mystery box typing is a game that will help you gain speed and confidence. First, by receiving a word by chance, you'll have the subject of your game.</p>
@@ -45,7 +58,7 @@
 
         <div class="h-[86vh] w-[30vw] grid grid-cols-1 place-items-center ">
             <a href="lobby.html" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around text-xl font-bold items-center text-white bg-[#A57548]">Start Game</a>
-            <img src="assets/images/mystery_box_icon.png" alt="burger" class="h-[100px]">
+            <a href="report.html" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around text-xl font-bold items-center text-white bg-[#A57548]">Report</a>
             <a href="" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around text-xl font-bold items-center text-white bg-[#A57548]">
                 <img src="assets/images/log_out.png" alt="cute door" class="h-[8vh]">
                 LOG OUT
@@ -54,6 +67,7 @@
     </main>
     
     <script src="script.js"></script>
+    <script src="settings.js"></script>
 </body>
 
 </html>

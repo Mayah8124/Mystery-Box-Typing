@@ -7,7 +7,19 @@
     <title>Mystery Box Typing</title>
     <link rel="icon" href="assets/images/mystery_box_icon.png">
     <link rel="stylesheet" href="./output.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
+<style>
+    header {
+  margin-top:0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #82ddf0;
+  padding: 20px 40px;
+  border-bottom: 4px solid #FFA500;
+}
+</style>
 
 <body class="bg-[#82DDF0] mx-[15px]">
     <header class="flex justify-between mt-[5px] mb-4">
@@ -22,7 +34,7 @@
     </header>
 
     <main class="flex row-auto">
-        <div class="grid grid-cols-1 place-content-between w-[70vw] h-[86vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image: url(assets/images/background.png);">
+        <div class="grid grid-cols-1 place-content-between w-[70vw] h-[86vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image:url(assets/images/background.png);">
             <div class="bg-[#A57548] h-[50vh] rounded-[5px] mx-10 mt-5 p-3">
                 <p id="word-display" class="text-white text-xl font-semibold"></p>
             </div>
@@ -59,6 +71,7 @@
 
     <script src="lobby.js"></script>
     <script src="game.js"></script>
+    <script src="settings.js"></script>
 </body>
 
 </html>

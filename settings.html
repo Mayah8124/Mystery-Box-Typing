@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mystery Box Typing - Settings</title>
+  <link rel="stylesheet" href="settings.css">
+  <link rel="stylesheet" href="./output.css">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="flex justify-between mt-[5px] mb-4">
+        <div class="flex row-auto items-center gap-2">
+            <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" class="h-[8vh]">
+            <p class="font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#82ddf0] to-[#A57548]">Mystery Box Typing</p>
+        </div>
+
+        <nav class="grid grid-cols-3 gap-14 font-semibold items-center text-center">
+            <a href="index.html" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Home</a>
+            <a href="profil.html" class=" border-b-4 border-b-[#F6C28B] w-[10vw]">Profil</a>
+            <a href="settings.html" class="bg-[#F6C28B] w-[10vw] h-[5vh] rounded-[5px]">Setting</a>
+        </nav>
+
+        <div class="flex row-auto items-center gap-2 pl-0">
+            <p class="font-medium text-xl ">MayahNeko25</p>
+            <img src="assets/images/girl.png" alt="user-profil" class="h-[8vh] rounded-full">
+        </div>
+    </header>
+
+  <main>
+    <section class="settings">
+      <div class="settings-box">
+        <h2>Theme</h2>
+        <div class="option">
+          <span id="theme-label">light</span>
+          <button id="toggle-theme">🌓</button>
+        </div>
+      </div>
+
+      <div class="settings-box">
+        <h2>sons</h2>
+        <div class="option">
+          <span>music</span>
+          <button id="toggle-sound">🎵</button>
+        </div>
+      </div>
+
+      <div class="settings-box">
+        <h2>Font</h2>
+        <div class="option">
+          <button class="font-btn" data-font="Georgia">Georgia</button>
+        </div>
+        <div class="option">
+          <button class="font-btn" data-font="'Courier New'">Courier New</button>
+        </div>
+        <div class="option">
+          <button class="font-btn" data-font="Verdana">Verdana</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="settings.js"></script>
+</body>
+</html>
+
+<footer class="flex justify-between items-center mt-4 p-4 bg-[#82ddf0] rounded-[5px]">
+    <p class="text-white font-medium text-sm">© 2025 Mystery Box Typing. All rights reserved.</p>
+
+</footer>
