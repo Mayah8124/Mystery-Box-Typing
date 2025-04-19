@@ -11,42 +11,59 @@
 
 <body class="bg-[#82DDF0] mx-[15px]">
 
-    <header class="flex justify-between mt-[5px] mb-4">
+    <header class="flex max-lg:top-0 max-lg:sticky justify-between mt-[5px] mb-4">
+
         <div class="flex row-auto items-center gap-2">
-            <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" class="h-[8vh]">
-            <p class="font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#5296A5] to-[#A57548]">Mystery Box Typing</p>
+            <img src="assets/images/mystery_box_icon.png" alt="mystery box icon" id="menu-toggle" class="max-sm:cursor-pointer h-[8vh]">
+            <p class="max-sm:hidden lg:block font-bold text-xl text-transparent bg-clip-text text-center bg-gradient-to-r from-[#5296A5] to-[#A57548]">Mystery Box Typing</p>
         </div>
 
-        <nav class="grid grid-cols-3 gap-14 font-semibold items-center text-center">
+        <!-- Navigation - Desktop -->
+        <nav class="lg:grid grid-cols-3 max-lg:hidden gap-14 font-semibold items-center text-center">
             <a href="index.html" class="bg-[#F6C28B] w-[10vw] h-[5vh] rounded-[5px] ">Home</a>
             <a href="profil.html" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Profil</a>
             <a href="" class="border-b-4 border-b-[#F6C28B] w-[10vw] ">Setting</a>
         </nav>
 
+        <!-- Navigation - Mobile -->
+        <div id="mobile-menu" class="lg:hidden max-lg:block absolute font-semibold h-full w-40 z-40 p-4 ">
+            <div class="flex flex-col space-y-4 mt-16">
+                <a href="index.html" class="block px-4 py-2 bg-[#F6C28B] rounded-[5px] text-center">
+                    Home
+                </a>
+                <a href="profil.html" class="block px-4 py-2 border-b-2 border-[#F6C28B] text-center">
+                    Profil
+                </a>
+                <a href="#" class="block px-4 py-2 border-b-2 border-[#F6C28B] text-center">
+                    Setting
+                </a>
+            </div>
+        </div>
+
         <div class="flex row-auto items-center gap-2 pl-0">
-            <p class="font-medium text-xl ">MayahNeko25</p>
+            <p class="lg:block max-lg:hidden font-medium text-xl ">MayahNeko25</p>
             <img src="assets/images/girl.png" alt="user-profil" class="h-[8vh] rounded-full">
         </div>
     </header>
 
-    <main class="flex row-auto">
-        <div class="h-[86vh] w-[70vw] grid grid-rows-2 place-content-between gap-[58vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image: url(assets/images/background.png);">
-            <div class="grid grid-rows-2 place-content-center gap-[15vh] m-4">
-                <h1 class="text-[#FCD7AD] font-bold text-[40px]">WELCOME</h1>
-                <p class="text-white font-medium text-[30px] pr-[20vw]">Mystery box typing is a game that will help you gain speed and confidence. First, by receiving a word by chance, you'll have the subject of your game.</p>
+    <main class="flex sm:row-auto max-sm:col-auto">
+        <div class="sm:h-[86vh] sm:w-[70vw] max-sm:h-[40vh] max-sm:w-full grid grid-rows-2 place-content-between gap-[58vh] bg-cover bg-center bg-no-repeat rounded-[5px]" style="background-image: url(assets/images/background.png);">
+            <div class="grid grid-rows-2 place-content-center max-sm:gap-5 sm:gap-[15vh] m-4">
+                <h1 class="text-[#FCD7AD] font-bold max-sm:text-[20px] sm:text-[40px]">WELCOME</h1>
+                <p class="text-white font-medium sm:text-[30px] max-md:text-[20px] max-sm:text-[16px] pr-[20vw]">Mystery box typing is a game that will help you gain speed and confidence. First, by receiving a word by chance, you'll have the subject of your game.</p>
             </div>
             
-            <div class="flex justify-between bottom-0">
+            <div class="sm:block max-md:hidden sm:flex justify-between bottom-0">
                 <img src="assets/images/girl.png" alt="litlle girl" class="h-[14vh]">
                 <img src="assets/images/house.png" alt="house" class="h-[14vh]">
                 <img src="assets/images/boy.png" alt="little boy" class="h-[14vh]">
             </div>
         </div>
 
-        <div class="h-[86vh] w-[30vw] grid grid-cols-1 place-items-center ">
-            <a href="lobby.html" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around text-xl font-bold items-center text-white bg-[#A57548]">Start Game</a>
-            <img src="assets/images/mystery_box_icon.png" alt="burger" class="h-[100px]">
-            <a href="" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around text-xl font-bold items-center text-white bg-[#A57548]">
+        <div class="sm:h-[86vh] sm:w-[30vw] grid sm:grid-cols-1 max-sm:grid-rows-2 max-sm:bottom-0 place-items-center ">
+            <a href="lobby.html" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around max-sm:text-[10px] sm:text-xl font-bold items-center text-white max-sm:bg-transparent sm:bg-[#A57548]">Start Game</a>
+            <img src="assets/images/mystery_box_icon.png" alt="burger" class="sm:block max-sm:hidden h-[100px]">
+            <a href="" class="w-[20vw] h-[10vh] rounded-[5px] flex justify-around max-sm:text-[10px] sm:text-xl font-bold items-center text-white max-sm:bg-transparent sm:bg-[#A57548]">
                 <img src="assets/images/log_out.png" alt="cute door" class="h-[8vh]">
                 LOG OUT
             </a>
